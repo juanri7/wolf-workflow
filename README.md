@@ -56,6 +56,7 @@ The paths, steps, and escalation rules live in [`skills/wolf/SKILL.md`](skills/w
 | motion-design | `LottieFiles/motion-design-skill` via `skills` | Animation only. |
 | Refero MCP | `api.refero.design/mcp` | Real-product UI references during exploration. |
 | shadcn MCP | `shadcn@latest mcp` | Component lookup and install. |
+| OpenWiki | `openwiki` (npm) + Claude Code integration | Codebase context: a git-tracked `openwiki/` wiki per repo. Initialize once per repo; `/wolf` reads it before work and updates it after. |
 | Task Master MCP | `task-master-ai` (npm) | Optional planner for NEW builds that span many sessions. Replaces `writing-plans` when used. |
 | Built-ins | Claude Code | `code-review`, `security-review`, `run`, `claude-in-chrome`. |
 

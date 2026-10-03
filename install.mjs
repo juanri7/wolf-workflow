@@ -74,8 +74,9 @@ for (const [repo, names] of SKILLS) {
   run(`npx -y skills add ${repo} -g -a claude-code -y --skill ${names.join(' ')}`);
 }
 
-console.log('\n== Task Master CLI');
-run('npm install -g task-master-ai');
+console.log('\n== CLIs');
+run('npm install -g task-master-ai openwiki');
+run('openwiki integrations install claude');
 
 console.log('\n== MCP servers');
 for (const { name, args } of MCPS) {

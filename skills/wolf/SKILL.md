@@ -23,6 +23,8 @@ State the call in one line with the deciding signal ("FEATURE — adds CSV impor
 
 Invoke each named skill when its step starts; don't paraphrase it from memory.
 
+**Codebase context (all paths):** if the repo has an `openwiki/` folder, search it for the area you're touching before reading code. If the repo has code but no wiki, offer once to initialize it (`openwiki` skill: "Initialize OpenWiki for this repository"). After the work lands, update it ("Update this repository's OpenWiki for changes since its last successful run").
+
 ### FIX
 1. `superpowers:systematic-debugging` — reproduce, find the root cause. Grep every caller of what you'll touch; fix it once where they all route through.
 2. `superpowers:test-driven-development` — a failing test that captures the bug, then the fix.
@@ -43,7 +45,7 @@ Invoke each named skill when its step starts; don't paraphrase it from memory.
 2. **Define** — `bmad-product-brief` (optional when solo and the idea is clear), then `bmad-prd`. Run the PRD's validate mode before moving on.
 3. **Design** — `bmad-ux` locks DESIGN.md + EXPERIENCE.md. Tokens via `ui-ux-pro-max:design-system`; execution and polish via `impeccable:impeccable`; motion via `motion-design`.
 4. **Architect** — `bmad-architecture` (draft, then validate).
-5. **Thin slice** — in a worktree, build the thinnest end-to-end path through the riskiest part. Feed what you learn back into the PRD/architecture before going further.
+5. **Thin slice** — in a worktree, build the thinnest end-to-end path through the riskiest part. Feed what you learn back into the PRD/architecture before going further. Initialize OpenWiki once the slice exists.
 6. **Spec** — `bmad-spec`. From here on the spec is the source of truth; earlier docs may go stale.
 7. **Plan** — `superpowers:writing-plans` from the spec. For builds big enough to span many sessions, use Task Master (`task-master parse-prd --input=<spec>`) instead. One planner per project, never both.
 8. **Build, verify, ship** — the FEATURE path, steps 2–6, per task or milestone.
