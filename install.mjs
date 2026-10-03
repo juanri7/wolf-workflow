@@ -31,6 +31,11 @@ const SKILLS = [
     'bmod-method', 'bmod-core-tools',
   ]],
   ['LottieFiles/motion-design-skill', ['motion-design']],
+  ['emilkowalski/skills', [
+    'animate', 'animation-vocabulary', 'apple-design', 'break-ui', 'emil-design-eng',
+    'find-animation-opportunities', 'improve-animations', 'mobile-native',
+    'pick-ui-library', 'prototype', 'review-animations',
+  ]],
 ];
 
 // Windows needs cmd /c to launch npm shims as stdio MCP servers.

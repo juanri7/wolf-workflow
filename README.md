@@ -53,7 +53,8 @@ The paths, steps, and escalation rules live in [`skills/wolf/SKILL.md`](skills/w
 | Ponytail | `DietrichGebert/ponytail` plugin | Always on. Keeps code minimal; governs what gets built, not planning prose. |
 | Impeccable | `pbakaus/impeccable` plugin | UI build quality and finish review. |
 | UI/UX Pro Max | `nextlevelbuilder/ui-ux-pro-max-skill` plugin | Design systems and tokens. |
-| motion-design | `LottieFiles/motion-design-skill` via `skills` | Animation only. |
+| motion-design | `LottieFiles/motion-design-skill` via `skills` | Motion principles and choreography. |
+| Emil Kowalski skills (`emil-design-eng`, `animate`, `review-animations`, `improve-animations`, `find-animation-opportunities`, `animation-vocabulary`, `apple-design`, `break-ui`, `mobile-native`, `pick-ui-library`, `prototype`) | `emilkowalski/skills` via `skills` | UI craft: polish, building and reviewing motion, worst-case data testing, mobile web feel, library picks, prototyping variants. Swift, Expo and Sonner skills are left out. |
 | Refero MCP | `api.refero.design/mcp` | Real-product UI references during exploration. |
 | shadcn MCP | `shadcn@latest mcp` | Component lookup and install. |
 | OpenWiki | `openwiki` (npm) + Claude Code integration | Codebase context: a git-tracked `openwiki/` wiki per repo. Initialize once per repo; `/wolf` reads it before work and updates it after. |
@@ -64,4 +65,5 @@ The paths, steps, and escalation rules live in [`skills/wolf/SKILL.md`](skills/w
 
 - `superpowers:brainstorming` vs `bmad-forge-idea`: brainstorming for features, forge-idea for products.
 - `superpowers:writing-plans` vs Task Master: writing-plans by default; Task Master only for large NEW builds.
-- Design skills: UI/UX Pro Max for the system, Impeccable for execution and polish, motion-design for motion.
+- Design skills: UI/UX Pro Max for the system; Impeccable and `emil-design-eng` for execution and polish.
+- Motion: `animate` builds it, `review-animations` critiques it, `motion-design` sets the principles.

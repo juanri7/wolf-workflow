@@ -32,18 +32,18 @@ Invoke each named skill when its step starts; don't paraphrase it from memory.
 4. Done = failing test now passes, nothing else broke, evidence shown.
 
 ### FEATURE
-1. `superpowers:brainstorming` — pin down behavior, edge cases, and what's out of scope. UI involved: pull references from the Refero MCP and components from the shadcn MCP here.
+1. `superpowers:brainstorming` — pin down behavior, edge cases, and what's out of scope. UI involved: pull references from the Refero MCP and components from the shadcn MCP here; `pick-ui-library` when a new library is needed; `prototype` when the right UI isn't obvious.
 2. `superpowers:using-git-worktrees` — isolate the branch.
 3. `superpowers:writing-plans` — small, test-first tasks.
-4. `superpowers:subagent-driven-development` (or `superpowers:executing-plans`) with `superpowers:test-driven-development` per task. UI polish: `impeccable:impeccable`; motion: `motion-design`.
-5. `superpowers:verification-before-completion`, then `code-review` (add `security-review` if it touches auth, input, or data).
+4. `superpowers:subagent-driven-development` (or `superpowers:executing-plans`) with `superpowers:test-driven-development` per task. UI polish: `impeccable:impeccable` and `emil-design-eng`; motion: `animate` (choreography principles: `motion-design`); phone-facing web: `mobile-native`.
+5. `superpowers:verification-before-completion`, then `code-review` (add `security-review` if it touches auth, input, or data). UI changed: `break-ui` with worst-case data; motion changed: `review-animations`.
 6. `superpowers:finishing-a-development-branch`.
 
 ### NEW
 0. Once per project: run the `bmad` skill's setup so `_bmad/` exists (the BMAD skills need it).
 1. **Explore** — `bmad-forge-idea` to pressure-test the idea; `anthropic-skills:deep-research` and the Refero MCP for market and visual references. Stay loose.
 2. **Define** — `bmad-product-brief` (optional when solo and the idea is clear), then `bmad-prd`. Run the PRD's validate mode before moving on.
-3. **Design** — `bmad-ux` locks DESIGN.md + EXPERIENCE.md. Tokens via `ui-ux-pro-max:design-system`; execution and polish via `impeccable:impeccable`; motion via `motion-design`.
+3. **Design** — `bmad-ux` locks DESIGN.md + EXPERIENCE.md. Explore directions with `prototype`; tokens via `ui-ux-pro-max:design-system`; execution and polish via `impeccable:impeccable` and `emil-design-eng` (`apple-design` for gesture/spring-heavy UI); motion language via `motion-design`.
 4. **Architect** — `bmad-architecture` (draft, then validate).
 5. **Thin slice** — in a worktree, build the thinnest end-to-end path through the riskiest part. Feed what you learn back into the PRD/architecture before going further. Initialize OpenWiki once the slice exists.
 6. **Spec** — `bmad-spec`. From here on the spec is the source of truth; earlier docs may go stale.
